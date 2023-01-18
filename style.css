@@ -1,6 +1,7 @@
 body {
     margin: 0;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hide {
@@ -16,6 +17,27 @@ main {
     min-height: 100vh;
     min-width: 100vw;
     background-color: blueviolet;
+    background-image: url('./images/cottage.jpg');
+    background-size: cover;
+}
+
+.score-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-holder {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.30);
+    border-radius: 15px;
+}
+
+.score {
+    font-size: 40px;
+}
+
+.play-again, .score {
+    margin: 7px;
 }
 
 .grid {
@@ -26,14 +48,20 @@ main {
     justify-content: space-around;
     height: 450px;
     width: 600px;
-    background-color: aqua;
+    background-color: #36494E;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.30);
 }
 
 img {
     border-radius: 15px;
-    border: 2px solid yellow;
+    border: 2px solid #84A59D;
+    cursor: pointer;
+}
+
+img:hover {
+    border: 2px solid #E6C229
 }
 
 .match-modal {
@@ -42,4 +70,21 @@ img {
     padding: 50px;
     height: 450px;
     width: 600px;
+}
+
+.play-again {
+    height: 35px;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid ;
+    background-color: #84A59D;;
+}
+
+.play-again:hover {
+    border: 3px solid #E6C229;
+    background-color: #36494E;
+    color: #E6C229;
 }

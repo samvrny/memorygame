@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //loads up the initial game board
     function loadGame() {
         wonCards = [];
+        scoreDisplay.textContent = '0'
         while(gameBox.firstChild) {
             gameBox.removeChild(gameBox.firstChild)
         }
@@ -109,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for(let i = 0; i < pictures.length; i++) {
             let card = document.createElement('img');
-            card.setAttribute('src', 'images/blueback.png')
+            card.setAttribute('src', 'images/question-mark.png')
             card.setAttribute('data-id', i);
             card.addEventListener('click', flipCard)
             gameBox.appendChild(card)
@@ -123,14 +124,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardOneId = chosenCardsId[0];
         const cardTwoId = chosenCardsId[1];
         if(chosenCards[0] === chosenCards[1]) {
-            cardsInQuestion[cardOneId].setAttribute('src', 'images/bgwhite.png');
-            cardsInQuestion[cardTwoId].setAttribute('src', 'images/bgwhite.png');
+            cardsInQuestion[cardOneId].setAttribute('src', 'images/blueback.png');
+            cardsInQuestion[cardTwoId].setAttribute('src', 'images/blueback.png');
             cardsInQuestion[cardOneId].removeEventListener('click', flipCard)
             cardsInQuestion[cardTwoId].removeEventListener('click', flipCard)
             wonCards.push(chosenCards)
         } else {
-            cardsInQuestion[cardOneId].setAttribute('src', 'images/blueback.png')
-            cardsInQuestion[cardTwoId].setAttribute('src', 'images/blueback.png')
+            cardsInQuestion[cardOneId].setAttribute('src', 'images/question-mark.png')
+            cardsInQuestion[cardTwoId].setAttribute('src', 'images/question-mark.png')
         }
         chosenCards = [];
         chosenCardsId = [];
