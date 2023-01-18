@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
+    </link>
     <script src="index.js"></script>
 </head>
-<body>
-    
-    <h3>Score:<span id='result'></span></h3>
 
-    <section id='grid' class="grid">
-        
-    </section>
+<body>
+
+    <main>
+        <h3>Score:<span id='result'></span></h3>
+
+        <section id='grid' class="grid">
+            <!-- this is where the gameboard is appended -->
+            <div id="match" class='hide match-modal'>
+
+            </div>
+        </section>
+
+        <button id="play-again">Play Again</button>
+    </main>
 
 </body>
+
 </html>
