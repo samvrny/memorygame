@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //make game board, and get the scoreboards id
     const gameBox = document.getElementById('grid');
     const scoreDisplay = document.getElementById('result');
-    // const matchDisplay = document.getElementById('match');
+    const matchDisplay = document.getElementById('match');
 
     //get the restart game button and make it reload the game
     const playAgain = document.getElementById('play-again');
@@ -84,14 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // function displayMatch() {
-    //     matchDisplay.classList.remove('hide')
-    // }
-
     //checks if the two chosen cards are a match or not. If so, remove them from the board, and if not, place them back face down
     function checkMatch() {
-        // setTimeout(displayMatch, 500)
-        // matchDisplay.classList.add('hide')
+        matchDisplay.classList.add('hide')
         let cardsInQuestion = document.querySelectorAll('img');
         const cardOneId = chosenCardsId[0];
         const cardTwoId = chosenCardsId[1];
@@ -121,13 +116,11 @@ document.addEventListener('DOMContentLoaded', () => {
         this.setAttribute('src', pictures[cardId].img)
 
         if(chosenCards.length === 2) {
-            setTimeout(checkMatch, 50) //USED TO BE 500
+            matchDisplay.classList.remove('hide')
+            setTimeout(checkMatch, 500) //USED TO BE 500
         }
     }
 
-    // function restartGame() {
-
-    // }
     //call to load the game
     loadGame();
 })
