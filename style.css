@@ -3,34 +3,8 @@ body {
     display: flex;
 }
 
-.grid {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap; */
-    text-align: center;
-    padding: 50px;
-    height: 350px;
-    width: 500px;
-    background-color: aqua;
-    overflow: hidden;
-}
-
-img {
-    border-radius: 15px;
-    border: 2px solid yellow;
-    margin: 5px;
-}
-
 .hide {
     display: none;
-}
-
-.match-modal {
-    position: absolute;
-    z-index: 99999;
-    height: 50%;
-    width: 50%;
 }
 
 main {
@@ -42,4 +16,30 @@ main {
     min-height: 100vh;
     min-width: 100vw;
     background-color: blueviolet;
+}
+
+.grid {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 450px;
+    width: 600px;
+    background-color: aqua;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+img {
+    border-radius: 15px;
+    border: 2px solid yellow;
+}
+
+.match-modal {
+    position: absolute;
+    z-index: 99999;
+    padding: 50px;
+    height: 450px;
+    width: 600px;
 }

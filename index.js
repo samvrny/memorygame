@@ -1,7 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    //put game pictures and back in an array
+    //put game pictures in an array to be printed. There are 20 total entries, two for each picture (10 total pictures)
     const pictures = [
+        {
+            name: 'colorful',
+            img: 'images/colorful.png'
+        },
+        {
+            name: 'colorful',
+            img: 'images/colorful.png'
+        },
+        {
+            name: 'dice',
+            img: 'images/dice.png'
+        },
+        {
+            name: 'dice',
+            img: 'images/dice.png'
+        },
+        {
+            name: 'emerald',
+            img: 'images/emerald.png'
+        },
+        {
+            name: 'emerald',
+            img: 'images/emerald.png'
+        },
+        {
+            name: 'sign',
+            img: 'images/sign.png'
+        },
+        {
+            name: 'sign',
+            img: 'images/sign.png'
+        },
         {
             name: 'blueorange',
             img: 'images/blueorange.png'
