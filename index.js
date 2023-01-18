@@ -52,8 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
-    pictures.sort(() => 0.5 - Math.random())
-
     //make game board, and get the scoreboards id
     const gameBox = document.getElementById('grid');
     const scoreDisplay = document.getElementById('result');
@@ -65,6 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //loads up the initial game board
     function loadGame() {
+
+        pictures.sort(() => 0.5 - Math.random())
+
         for(let i = 0; i < pictures.length; i++) {
             let card = document.createElement('img');
             card.setAttribute('src', 'images/blueback.png')
