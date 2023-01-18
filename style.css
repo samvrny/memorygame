@@ -4,12 +4,14 @@ body {
 }
 
 .grid {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    text-align: center;
+    padding: 50px;
     height: 350px;
-    width: 450px;
+    width: 500px;
     background-color: aqua;
     overflow: hidden;
 }
@@ -17,6 +19,7 @@ body {
 img {
     border-radius: 15px;
     border: 2px solid yellow;
+    margin: 5px;
 }
 
 .hide {
@@ -24,10 +27,10 @@ img {
 }
 
 .match-modal {
-    z-index: 25;
-    height: 100%;
-    width: 100%;
-    background-color: red;
+    position: absolute;
+    z-index: 99999;
+    height: 50%;
+    width: 50%;
 }
 
 main {
