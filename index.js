@@ -4,44 +4,67 @@ document.addEventListener('DOMContentLoaded', () => {
     const pictures = [
         {
             name: 'blueorange',
-            img: require('./images/blueorange.png')
+            img: './images/blueorange.png'
+        },
+        {
+            name: 'blueorange',
+            img: './images/blueorange.png'
         },
         {
             name: 'eggs',
-            img: require('./images/eggs.png')
+            img: './images/eggs.png'
+        },
+        {
+            name: 'eggs',
+            img: './images/eggs.png'
         },
         {
             name: 'monkeys',
-            img: require('./images/monkeys.png')
+            img: './images/monkeys.png'
+        },
+        {
+            name: 'monkeys',
+            img: './images/monkeys.png'
         },
         {
             name: 'rose',
-            img: require('./images/rose.png')
+            img: './images/rose.png'
+        },
+        {
+            name: 'rose',
+            img: './images/rose.png'
         },
         {
             name: 'leaves',
-            img: require('./images/leaves.png')
+            img: './images/leaves.png'
+        },
+        {
+            name: 'leaves',
+            img: './images/leaves.png'
         },
         {
             name: 'hotballons',
-            img: require('./images/hotballons.png')
+            img: './images/hotballons.png'
+        },
+        {
+            name: 'hotballons',
+            img: './images/hotballons.png'
         }
-        // {
-        //     //picture back image
-        //     name: 'blueback',
-        //     img: require('./images/blueback.png')
-        // }
     ]
 
     //make game board
-    const gameBox = document.querySelector('.grid')
+    const gameBox = document.getElementById('grid')
 
     function loadGame() {
         for(let i = 0; i < pictures.length; i++) {
             let card = document.createElement('img');
+            card.setAttribute('src', 'images/blueback.png')
             card.setAttribute('data-id', i);
-            // card.addEventListener('click', flipcard)
+            // card.addEventListener('click', flipCard)
             gameBox.appendChild(card)
         }
     }
+
+    //load the game
+    loadGame();
 })
