@@ -14,6 +14,7 @@ Here is a shot of the deployed application:
 * HTML
 * CSS
 * Javascript
+* Google Fonts
 
 ## Contributing
 Made By Samuel Varney

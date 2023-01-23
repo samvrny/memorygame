@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Righteous, Arial, Helvetica, sans-serif;
 }
 
 .hide {
@@ -37,6 +37,7 @@ main {
 }
 
 .play-again, .score {
+    font-family: Righteous;
     margin: 7px;
 }
 
